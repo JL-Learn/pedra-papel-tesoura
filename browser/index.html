@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra-Papel-Tesoura</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <!-------------------------------------------------- (Código Antigo 23/07/2021) ----------------------------------------------------------------
     <div style="margin-bottom: 20px;">
         <input type="button" value="pedra">
         <input type="button" value="papel">
@@ -16,6 +19,40 @@
 
     <div id="resultado"></div>
 
+    <script src="./ppt.js"></script>
+    ----------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <header class="cabecalho">
+        <h1 class="titulo">Pedra Papel Tesoura</h1>
+    </header>
+
+    <main class="principal">
+        <div class="placar">
+            <h2 class="pontuacao-cabecalho" id="pontuacao-cabecalho">Placar</h2>
+            <div class="pontuacao">
+                <div class="secao-jogador">
+                    <p id="placar-jogador">Jogador: 0</p>
+                    <i class="fas fa-hand-paper" id="simbolo-jogador"></i>
+                </div>
+                <div class="secao-computador">
+                    <p id="placar-computador">Computador: 0</p>
+                    <i class="fas fa-hand-rock" id="simbolo-computador"></i>
+                </div>
+            </div>
+            <div class="escolhas"></div>
+        </div>
+        <div class="botoes">
+            <button class="btn" id="rock-btn">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button class="btn" id="paper-btn">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button class="btn" id="scissors-btn">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+    </main>
     <script src="./ppt.js"></script>
 </body>
 </html>

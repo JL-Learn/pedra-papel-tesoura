@@ -1,0 +1,126 @@
+:root {
+    --font: #ddd;
+    --background: #222831;
+    --header: #393e46;
+    --title: #00adb5;
+    --border: #00adb5;
+    --button: #393e46;
+    --button-hover: #4a4f57;
+    --button-active: #5b5f68;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--font);
+}
+  
+body {
+    font-size: 1.6rem;
+}
+  
+header {
+    font-size: 2.4rem;
+}
+  
+h1 {
+    line-height: 1.2;
+}
+  
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+  
+.cabecalho {
+    padding: 3rem;
+    border-bottom: 2px solid var(--border);
+    background-color: var(--header);
+    text-align: center;
+}
+  
+.titulo {
+    color: var(--title);
+}
+  
+.principal {
+    margin-top: 3rem;
+    text-align: center;
+}
+  
+.placar {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+  
+.pontuacao-cabecalho {
+    font-size: 4rem;
+}
+  
+.pontuacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2.4rem;
+}
+  
+.secao-jogador {
+    margin-right: 10rem;
+}
+  
+.secao-jogador p,
+.secao-computador p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+  
+.btn {
+    border: 2px solid var(--font);
+    border-radius: 10px;
+    background-color: var(--button);
+    padding: 2rem;
+    margin: 1rem;
+}
+  
+.btn:hover {
+    background-color: var(--button-hover);
+}
+  
+.btn:active {
+    background-color: var(--button-active);
+}
+  
+.far,
+.fas {
+    font-size: 10rem;
+}
+  
+.fas {
+    visibility: hidden;
+    pointer-events: none;
+}
+  
+.fas.active {
+    visibility: visible;
+}
+  
+@media (max-width: 550px) {
+    html {
+      font-size: 40%;
+    }
+}
